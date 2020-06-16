@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <base href="./">
+    <base href="./../">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
@@ -42,18 +42,12 @@
       // Bootstrap ID
       gtag('config', 'UA-118965717-5');
     </script>
-    <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
+     <link href="node_modules/@coreui/chartjs/dist/css/coreui-chartjs.css" rel="stylesheet">
   </head>
   <body class="c-app">
     <div class="c-sidebar c-sidebar-dark c-sidebar-fixed c-sidebar-lg-show" id="sidebar">
       <div class="c-sidebar-brand d-lg-down-none">
         <h3 style="font-weight:bold;">Admin_Cartographie</h3>
-        <!-- <svg class="c-sidebar-brand-full" width="118" height="46" alt="CoreUI Logo">
-          <use xlink:href="assets/brand/coreui.svg#full"></use>
-        </svg> -->
-        <!-- <svg class="c-sidebar-brand-minimized" width="46" height="46" alt="CoreUI Logo">
-          <use xlink:href="assets/brand/coreui.svg#signet"></use>
-        </svg> -->
       </div>
       <ul class="c-sidebar-nav">
         <li class="c-sidebar-nav-item"><a class="c-sidebar-nav-link" href="index.html">
@@ -122,9 +116,9 @@
           </svg>
         </button>
         <ul class="c-header-nav d-md-down-none">
-          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Dashboard</a></li>
-          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Users</a></li>
-          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#">Settings</a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#"></a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#"></a></li>
+          <li class="c-header-nav-item px-3"><a class="c-header-nav-link" href="#"></a></li>
         </ul>
         <ul class="c-header-nav ml-auto mr-4">
           <li class="c-header-nav-item d-md-down-none mx-2"><a class="c-header-nav-link" href="#">
@@ -180,171 +174,73 @@
           </li>
         </ul>
         <div class="c-subheader px-3">
-          <!-- Breadcrumb-->
-          <ol class="breadcrumb border-0 m-0">
-            <li class="breadcrumb-item">Home</li>
-            <li class="breadcrumb-item"><a href="#">Admin</a></li>
-            <li class="breadcrumb-item active">Dashboard</li>
-            <!-- Breadcrumb Menu-->
-          </ol>
+          <h3 style="font-weight: bold;">Rapport graphique pour la province du Kassai Oriental</h3>
         </div>
       </header>
       <div class="c-body">
         <main class="c-main">
-          <div class="container-fluid">
-            <div class="fade-in">
-              <div class="row">
-                <div class="col-sm-6 col-lg-3">
-                  <div class="card text-white bg-gradient-primary">
-                    <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
-                      <div>
-                        <div class="text-value-lg">823</div>
-                        <div>Nombre de notification</div>
-                      </div>
-                      <div class="btn-group">
-                        <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
-                          </svg>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                      </div>
+            <div class="container-fluid">
+              <div class="fade-in">       
+                <!-- /.row-->
+                <div class="card-columns cols-2">
+                  <div class="card">
+                    <div class="card-header">type de violence
+                      <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
                     </div>
-                    <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
-                      <canvas class="chart" id="card-chart1" height="70"></canvas>
+                    <div class="card-body">
+                      <div class="c-chart-wrapper">
+                        <canvas id="canvas-1"></canvas>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- /.col-->
-                <div class="col-sm-6 col-lg-3">
-                  <div class="card text-white bg-gradient-info">
-                    <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
-                      <div>
-                        <div class="text-value-lg">923</div>
-                        <div>Nombre de VBG</div>
-                      </div>
-                      <div class="btn-group">
-                        <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
-                          </svg>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                      </div>
+                  <div class="card">
+                    <div class="card-header">Auteur de viol
+                      <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
                     </div>
-                    <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
-                      <canvas class="chart" id="card-chart2" height="70"></canvas>
+                    <div class="card-body">
+                      <div class="c-chart-wrapper">
+                        <canvas id="canvas-2"></canvas>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- /.col-->
-                <div class="col-sm-6 col-lg-3">
-                  <div class="card text-white bg-gradient-warning">
-                    <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
-                      <div>
-                        <div class="text-value-lg">103</div>
-                        <div>Nombre de Structure</div>
-                      </div>
-                      <div class="btn-group">
-                        <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
-                          </svg>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                      </div>
+                  <div class="card">
+                    <div class="card-header">
+                      <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
                     </div>
-                    <div class="c-chart-wrapper mt-3" style="height:70px;">
-                      <canvas class="chart" id="card-chart3" height="70"></canvas>
+                    <div class="card-body">
+                      <div class="c-chart-wrapper">
+                        <canvas id="canvas-4"></canvas>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <!-- /.col-->
-                <div class="col-sm-6 col-lg-3">
-                  <div class="card text-white bg-gradient-danger">
-                    <div class="card-body card-body pb-0 d-flex justify-content-between align-items-start">
-                      <div>
-                        <div class="text-value-lg">13</div>
-                        <div>Nombre d'utilisateur</div>
-                      </div>
-                      <div class="btn-group">
-                        <button class="btn btn-transparent dropdown-toggle p-0" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          <svg class="c-icon">
-                            <use xlink:href="node_modules/@coreui/icons/sprites/free.svg#cil-settings"></use>
-                          </svg>
-                        </button>
-                        <div class="dropdown-menu dropdown-menu-right"><a class="dropdown-item" href="#">Action</a><a class="dropdown-item" href="#">Another action</a><a class="dropdown-item" href="#">Something else here</a></div>
-                      </div>
+                  <div class="card">
+                    <div class="card-header">Tranche d'age
+                      <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
                     </div>
-                    <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
-                      <canvas class="chart" id="card-chart4" height="70"></canvas>
+                    <div class="card-body">
+                      <div class="c-chart-wrapper">
+                        <canvas id="canvas-3"></canvas>
+                      </div>
                     </div>
                   </div>
+  
+                  <div class="card">
+                    <div class="card-header">sexevicitime
+                      <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
+                    </div>
+                    <div class="card-body">
+                      <div class="c-chart-wrapper">
+                        <canvas id="canvas-5"></canvas>
+                      </div>
+                    </div>
+                  </div>
+  
+  
                 </div>
-                <!-- /.col-->
+                <!-- /.row-->
               </div>
-              <!-- /.row-->
-              <div class="card-columns cols-2">
-                <div class="card">
-                  <div class="card-header">type de violence
-                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
-                  </div>
-                  <div class="card-body">
-                    <div class="c-chart-wrapper">
-                      <canvas id="canvas-1"></canvas>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">Auteur de viol
-                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
-                  </div>
-                  <div class="card-body">
-                    <div class="c-chart-wrapper">
-                      <canvas id="canvas-2"></canvas>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">
-                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
-                  </div>
-                  <div class="card-body">
-                    <div class="c-chart-wrapper">
-                      <canvas id="canvas-4"></canvas>
-                    </div>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-header">Tranche d'age
-                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
-                  </div>
-                  <div class="card-body">
-                    <div class="c-chart-wrapper">
-                      <canvas id="canvas-3"></canvas>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <div class="card-header">sexevicitime
-                    <div class="card-header-actions"><a class="card-header-action" href="http://www.chartjs.org" target="_blank"><small class="text-muted">docs</small></a></div>
-                  </div>
-                  <div class="card-body">
-                    <div class="c-chart-wrapper">
-                      <canvas id="canvas-5"></canvas>
-                    </div>
-                  </div>
-                </div>
-
-
-              </div>gael
-              <!-- /.row-->
-              <!-- /.row-->
             </div>
-          </div>
-        </main>
-        <footer class="c-footer">
+          </main>        <footer class="c-footer">
           <div><a href="https://coreui.io">CoreUI</a> &copy; 2020 creativeLabs.</div>
           <div class="ml-auto">Powered by&nbsp;<a href="https://coreui.io/">CoreUI</a></div>
         </footer>

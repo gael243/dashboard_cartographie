@@ -16,7 +16,7 @@ const random = () => Math.round(Math.random() * 100)
 const lineChart = new Chart(document.getElementById('canvas-1'), {
   type: 'line',
   data: {
-    labels : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels : ['sexuelle', 'verbale', 'harcelement', 'financiere', 'spirituel', 'physique', 'harcelement'],
     datasets : [
       {
         label: 'My First dataset',
@@ -45,7 +45,7 @@ const lineChart = new Chart(document.getElementById('canvas-1'), {
 const barChart = new Chart(document.getElementById('canvas-2'), {
   type: 'bar',
   data: {
-    labels : ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    labels : ['groupeArmer', 'Rebelle', 'dirigeant', 'pasteur', 'policier', 'militaire', 'onu'],
     datasets : [
       {
         backgroundColor : 'rgba(220, 220, 220, 0.5)',
@@ -72,7 +72,7 @@ const barChart = new Chart(document.getElementById('canvas-2'), {
 const doughnutChart = new Chart(document.getElementById('canvas-3'), {
   type: 'doughnut',
   data: {
-    labels: ['Red', 'Green', 'Yellow'],
+    labels: ['7-20ans', '21-30ans', '30-70ans'],
     datasets: [{
       data: [300, 50, 100],
       backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
@@ -86,44 +86,44 @@ const doughnutChart = new Chart(document.getElementById('canvas-3'), {
 
 // eslint-disable-next-line no-unused-vars
 const radarChart = new Chart(document.getElementById('canvas-4'), {
-  type: 'radar',
-  data: {
-    labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
-    datasets: [
-      {
-        label: 'My First dataset',
-        backgroundColor: 'rgba(220, 220, 220, 0.2)',
-        borderColor: 'rgba(220, 220, 220, 1)',
-        pointBackgroundColor: 'rgba(220, 220, 220, 1)',
-        pointBorderColor: '#fff',
-        pointHighlightFill: '#fff',
-        pointHighlightStroke: 'rgba(220, 220, 220, 1)',
-        data: [65, 59, 90, 81, 56, 55, 40]
-      },
-      {
-        label: 'My Second dataset',
-        backgroundColor: 'rgba(151, 187, 205, 0.2)',
-        borderColor: 'rgba(151, 187, 205, 1)',
-        pointBackgroundColor: 'rgba(151, 187, 205, 1)',
-        pointBorderColor: '#fff',
-        pointHighlightFill: '#fff',
-        pointHighlightStroke: 'rgba(151, 187, 205, 1)',
-        data: [28, 48, 40, 19, 96, 27, 100]
-      }
-    ]
-  },
-  options: {
-    responsive: true
-  }
+  // type: 'radar',
+  // data: {
+  //   labels: ['Eating', 'Drinking', 'Sleeping', 'Designing', 'Coding', 'Cycling', 'Running'],
+  //   datasets: [
+  //     {
+  //       label: 'My First dataset',
+  //       backgroundColor: 'rgba(220, 220, 220, 0.2)',
+  //       borderColor: 'rgba(220, 220, 220, 1)',
+  //       pointBackgroundColor: 'rgba(220, 220, 220, 1)',
+  //       pointBorderColor: '#fff',
+  //       pointHighlightFill: '#fff',
+  //       pointHighlightStroke: 'rgba(220, 220, 220, 1)',
+  //       data: [65, 59, 90, 81, 56, 55, 40]
+  //     },
+  //     {
+  //       label: 'My Second dataset',
+  //       backgroundColor: 'rgba(151, 187, 205, 0.2)',
+  //       borderColor: 'rgba(151, 187, 205, 1)',
+  //       pointBackgroundColor: 'rgba(151, 187, 205, 1)',
+  //       pointBorderColor: '#fff',
+  //       pointHighlightFill: '#fff',
+  //       pointHighlightStroke: 'rgba(151, 187, 205, 1)',
+  //       data: [28, 48, 40, 19, 96, 27, 100]
+  //     }
+  //   ]
+  // },
+  // options: {
+  //   responsive: true
+  // }
 })
 
 // eslint-disable-next-line no-unused-vars
 const pieChart = new Chart(document.getElementById('canvas-5'), {
   type: 'pie',
   data: {
-    labels: ['Red', 'Green', 'Yellow'],
+    labels: ['Masculin', 'Feminin', 'Autres'],
     datasets: [{
-      data: [300, 50, 100],
+      data: [100, 300, 10],
       backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56'],
       hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
     }]
